@@ -3,18 +3,13 @@ import React, { useState } from 'react';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
-  const [name, setName] = useState('shaun');
-
-  const clickHandler = () => {
-    setName('chun-li');
-  }
+  const [name, setName] = useState('shaun')
+  const [age, setAge] = useState(30);
 
   return (
     <View style={styles.container}>
-      <Text>My name is {name}</Text>
-      <View style={styles.ButtonContainer}>
-        <Button title='Update State' onPress={clickHandler} />
-      </View>
+      <Text>Name: {name}, Age: {age}</Text>
+
     </View>
   );
 }

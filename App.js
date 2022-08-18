@@ -33,13 +33,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: 40,
+    paddingHorizontal: 15
+    
+    //alignItems: 'center',
+    //justifyContent: 'center',
   },
   item: {
     marginTop: 24,
     padding: 30,
     backgroundColor: 'pink',
-    fontSize: 24
+    fontSize: 24,
   }
 });

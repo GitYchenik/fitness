@@ -12,7 +12,7 @@ const Start = () => {
       </View>
       <View style={{ flex: 1, backgroundColor: 'steelblue' }}>
         <Text style={{ textAlign: 'center' }}>Все права не защищены</Text>
-      </View>
+      </View> 
     </View>
   );
 }

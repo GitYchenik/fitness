@@ -1,48 +1,34 @@
-import React, { useState } from 'react';
-//import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, TextInput, ScrollView } from 'react-native';
+import React from 'react';
+import { StyleSheet, View, Text } from 'react-native';
 
-export default function App() {
-  const [people, setPeople] = useState([
-    { name: 'shaun', key: '1' },
-    { name: 'yoshi', key: '2' },
-    { name: 'mario', key: '3' },
-    { name: 'luigi', key: '4' },
-    { name: 'peach', key: '5' },
-    { name: 'toad', key: '6' },
-    { name: 'bowser', key: '7' },
-  ]);
-
-
+const Start = () => {
   return (
-
-    <View style={styles.container}>
- 
-      <ScrollView>
-        {people.map((item) => (
-          <View key={item.key}>
-            <Text style={styles.item}>{item.name}</Text>
-          </View>
-        ))}
-      </ScrollView >
+    <View style={{ flex: 1 }}>
+      <View style={styles.header}>
+        <Text style={styles.headerText}>Fitness</Text>
+      </View>
+      <View style={{ flex: 15, backgroundColor: 'white' }}>
+        <Text style={{ align: 'center' }}>Дневник заданий</Text>
+      </View>
+      <View style={{ flex: 1, backgroundColor: 'steelblue' }}>
+        <Text style={{ textAlign: 'center' }}>Все права не защищены</Text>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    paddingTop: 40,
-    paddingHorizontal: 15
-    
-    //alignItems: 'center',
-    //justifyContent: 'center',
+  header: {
+    flex: 2,
+    backgroundColor: '#0a0a0a'
   },
-  item: {
-    marginTop: 24,
-    padding: 30,
-    backgroundColor: 'pink',
-    fontSize: 24,
+  headerText: {
+    fontFamily: 'Inter-Black', 
+    fontSize: 30, 
+    color: 'white'
   }
 });
+
+
+
+export default Start;

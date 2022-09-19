@@ -20,25 +20,21 @@ const Start = () => {
 const styles = StyleSheet.create({
   header: {
     flex: 2,
-    backgroundColor: '#00FF00',
-    borderRadius: '20px',
-    marginTop: '5px',
-    marginLeft: '5px',
-    marginRight: '5px'
-
+    backgroundColor: '#00FF00'
   },
   headerText: { 
     fontSize: 30, 
     color: 'white',
     textAlign: 'center',
-    fontWeight: '600'
+    fontWeight: 'bold',
+    paddingTop: 20
   },
   main: {
     flex: 15, 
     backgroundColor: 'white'
   },
   mainText: {
-
+    fontSize: 20
   },
   footer: {
     flex: 1, 
@@ -47,8 +43,7 @@ const styles = StyleSheet.create({
   footerText: {
     textAlign: 'center'
   }
-});
-
+})
 
 
 export default Start;

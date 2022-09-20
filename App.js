@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View, Text, TextInput } from 'react-native';
 
 const Start = () => {
   return (
@@ -7,12 +7,36 @@ const Start = () => {
       <View style={styles.header}>
         <Text style={styles.headerText}>Fitness</Text>
       </View>
+
       <View style={styles.main}>
         <Text style={styles.mainText}>Дневник заданий</Text>
-      </View>
-      <View>
-        <Text>Бицепс + Трицепс</Text>
-        <Text>1. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Штанга</Text>
+        <View>
+          <Text>Бицепс + Трицепс</Text>
+        </View>
+        <View>
+          <Text>1. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Штанга <TextInput placeholder='!Что то вводить тут!'/></Text>
+          <Text>2. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер Смитта</Text>
+          <Text>3. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Гантели</Text>
+          <Text>4. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер смита верх</Text>
+        </View>
+        <View>
+          <Text>Грудь + Спина</Text>
+        </View>
+        <View>
+          <Text>1. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер 4</Text>
+          <Text>2. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Блок назад</Text>
+          <Text>3. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Отжимания</Text>
+          <Text>4. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Разведение в блоке</Text>
+        </View>
+        <View>
+          <Text>Плечи + Трапеция</Text>
+        </View>
+        <View>
+          <Text>1. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Гантели</Text>
+          <Text>2. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер валики</Text>
+          <Text>3. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер верх</Text>
+          <Text>4. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Разведение в блоке</Text>
+        </View>
       </View>
       <View style={styles.footer}>
         <Text style={styles.footerText}>Все права не защищены</Text>

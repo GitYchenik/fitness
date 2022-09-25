@@ -9,19 +9,19 @@ const Start = () => {
       </View>
 
       <View style={styles.main}>
-        <Text style={styles.mainText}>Дневник заданий</Text>
+        <Text style={styles.mainText}>Дневник заданий{"\n"}{"\n"}</Text>
         <View>
-          <Text>Бицепс + Трицепс</Text>
+          <Text style={styles.zagolovok}>Бицепс + Трицепс</Text>
         </View>
         <View>
-          <Text>1. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Штанга </Text>
-          <TextInput placeholder='!Что то вводить тут!'/>
+          <Text>1. 10 кг(12) - 15 кг - 20 кг - 25 кг{ <TextInput placeholder='!Что то вводить тут!' keyboardType='numeric' /> } кг (6)      Штанга </Text>
+
           <Text>2. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер Смитта</Text>
           <Text>3. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Гантели</Text>
           <Text>4. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер смита верх</Text>
         </View>
         <View>
-          <Text>Грудь + Спина</Text>
+          <Text style={styles.zagolovok}>{"\n"}{"\n"}Грудь + Спина</Text>
         </View>
         <View>
           <Text>1. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер 4</Text>
@@ -30,7 +30,7 @@ const Start = () => {
           <Text>4. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Разведение в блоке</Text>
         </View>
         <View>
-          <Text>Плечи + Трапеция</Text>
+          <Text style={styles.zagolovok}>{"\n"}{"\n"}Плечи + Трапеция</Text>
         </View>
         <View>
           <Text>1. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Гантели</Text>
@@ -72,6 +72,10 @@ const styles = StyleSheet.create({
   },
   footerText: {
     textAlign: 'center'
+  },
+  zagolovok: {
+    textAlign: 'center',
+    fontWeight: 'bold',
   }
 })
 

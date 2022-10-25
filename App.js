@@ -9,17 +9,21 @@ const Start = () => {
       </View>
 
       <View style={styles.main}>
-        <Text style={styles.mainText}>Дневник заданий{"\n"}{"\n"}</Text>
+        <Text style={styles.mainText}>Дневник занятий{"\n"}{"\n"}</Text>
         <View>
           <Text style={styles.zagolovok}>Бицепс + Трицепс</Text>
         </View>
         <View>
-          <Text>1. 10 кг(12) - 15 кг - 20 кг - 25 кг{ <TextInput placeholder='!Что то вводить тут!' keyboardType='numeric' /> } кг (6)      Штанга </Text>
-
+          <View style={{ flexDirection: "row" }}>
+            <Text style={{ flex: 1 }}>1. 10 кг(12) - 15 кг - 20 кг - 25 кг кг (6)      Штанга  </Text>
+            <TextInput style={{ flex: 1 }} placeholder='!Что то вводить тут!' keyboardType='numeric' />
+          </View>
           <Text>2. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер Смитта</Text>
           <Text>3. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Гантели</Text>
           <Text>4. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер смита верх</Text>
         </View>
+
+        
         <View>
           <Text style={styles.zagolovok}>{"\n"}{"\n"}Грудь + Спина</Text>
         </View>

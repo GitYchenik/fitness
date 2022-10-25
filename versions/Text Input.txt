@@ -1,0 +1,5 @@
+<View>
+          <View style={{ flexDirection: "row" }}>
+            <Text style={{ flex: 1 }}>1. 10 кг(12) - 15 кг - 20 кг - 25 кг кг (6)      Штанга  </Text>
+            <TextInput style={{ flex: 1 }} placeholder='!Что то вводить тут!' keyboardType='numeric' />
+          </View>

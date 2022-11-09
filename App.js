@@ -23,7 +23,7 @@ const Start = () => {
           <Text>4. 10 кг(12) - 15 кг - 20 кг - 25 кг (6)      Тренажер смита верх</Text>
         </View>
 
-        
+
         <View>
           <Text style={styles.zagolovok}>{"\n"}{"\n"}Грудь + Спина</Text>
         </View>

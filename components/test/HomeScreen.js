@@ -14,8 +14,11 @@ export default function HomeScreen({ navigation }) {
         <>
             <View>{<LoadScene />}</View>
             <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Image source={{uri: 'https://snack-web-player.s3.us-west-1.amazonaws.com/v2/46/static/media/react-native-logo.79778b9e.png'}} />
                 <Text>Жить здорово</Text>
+                <Image
+                    style={{ width: 50, height: 50 }}
+                    source={require('./welcome.jpg')}
+                />
             </View>
         </>
     );

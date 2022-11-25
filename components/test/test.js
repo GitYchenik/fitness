@@ -1,21 +1,29 @@
 import React from 'react';
+import HomeScreen from './HomeScreen.js';
+import ProfileScreen from './ProfileScreen.js';
+
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
+
 
 const MyStack = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="Home"
+          name="HomeScreen"
           component={HomeScreen}
           options={{ title: 'Welcome' }}
         />
-        <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen
+          name="ProfileScreen"
+          component={ProfileScreen}
+          options={{ title: 'Welcome' }} />
       </Stack.Navigator>
     </NavigationContainer>
+
   );
 };
 

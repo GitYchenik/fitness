@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeScreen from './Navigator/HomeScreen.js';
 import ProfileScreen from './Navigator/ProfileScreen.js';
+import Main from './Navigator/ProfileScreen/Main.js';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -21,7 +22,13 @@ const MyStack = () => {
           name="ProfileScreen"
           component={ProfileScreen}
           options={{ headerShown: false }}
-          />
+         />
+        <Stack.Screen
+          name="Main"
+          component={Main}
+          options={{ headerShown: false }}
+         />
+         
       </Stack.Navigator>
     </NavigationContainer>
 

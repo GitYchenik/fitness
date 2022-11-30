@@ -15,30 +15,9 @@ const ProfileScreen = ({ navigation }) => {
         <ScrollView>
           <Text style={styles.mainText}>Дневник занятий</Text>
 
-          <View style={{ width: "95%", alignSelf: "center" }}>
-            <Text style={styles.zagolovok}> День 1. Бицепс + Трицепс </Text>
-            <TouchableHighlight onPress={() => navigation.navigate("Main")} style={styles.button}>
-              <Main />
-            </TouchableHighlight>
-          </View>
-
           <Touchable_Main navigation={navigation}/>
           <Touchable_Main navigation={navigation}/>
           <Touchable_Main navigation={navigation}/> 
-
-          <View style={{ width: "95%", alignSelf: "center" }}>
-            <Text style={styles.zagolovok}> День 2. Грудь + Спина </Text>
-            <TouchableHighlight onPress={() => navigation.navigate('Main')} style={styles.button}>
-              <Main />
-            </TouchableHighlight>
-          </View>
-
-          <View style={{ width: "95%", alignSelf: "center" }}>
-            <Text style={styles.zagolovok}> День 3. Плечи + Трапеция </Text>
-            <TouchableHighlight onPress={() => navigation.navigate('Main')} style={styles.button}>
-              <Main />
-            </TouchableHighlight>
-          </View>
           
         </ScrollView>
       </View>
@@ -55,18 +34,7 @@ const styles = StyleSheet.create({
   mainText: {
     fontSize: 20,
     textAlign: 'center',
-  },
-  zagolovok: {
-    textAlign: 'center',
-    fontWeight: 'bold',
-    marginTop: 15
-  },
-  button: {
-    alignItems: "center",
-    backgroundColor: "#DCDCDC",
-    padding: 10,
-    color: "white"
-  },
+  }
 })
 
 

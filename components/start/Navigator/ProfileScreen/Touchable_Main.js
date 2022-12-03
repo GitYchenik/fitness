@@ -1,12 +1,13 @@
-import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
-import Main from './Main';
+import React from 'react';
+import { View, Text, TouchableHighlight, StyleSheet} from 'react-native';
 
 const Touchable_Main = ({ navigation }) => {
+
   return (
-  <View style={styles.mainblock}>
-      <Text style={styles.zagolovok}> День 1. Бицепс + Трицепс </Text>
-      <TouchableHighlight onPress={() => navigation.navigate("Main")} style={styles.button} underlayColor="blue">
-        <Main />
+    <View style={styles.mainblock}>
+      <Text style={styles.zagolovok}> Hello  !</Text>
+      <TouchableHighlight onPress={() => navigation.navigate("Main", { data: { title: 'Hello World'}})} style={styles.button} underlayColor="blue">
+        <Text> dfsdfsfsfsdfsdf</Text>
       </TouchableHighlight>
     </View>
   )

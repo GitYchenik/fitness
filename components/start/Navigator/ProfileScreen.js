@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, View, Text, ScrollView, TouchableHighlight, Touchable } from 'react-native';
 import Header from './ProfileScreen/Header.js'
 import Footer from './ProfileScreen/Footer.js'
-import Main from './ProfileScreen/Main.js';
 import Touchable_Main from './ProfileScreen/Touchable_Main.js'
 
 

@@ -1,23 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../ProfileScreen/Header.js'
-import { StyleSheet, View, Text, Button } from 'react-native';
+import { StyleSheet, View, Text, FlatList } from 'react-native';
 import Footer from './Footer.js';
 
+
 const Main = () => {
+  const [Data_db, setData_db] = useState([
+    { id: 1, znachenie: 'Тренажер 4' },
+    { id: 2, znachenie: 'Блок назад' },
+    { id: 3, znachenie: 'Отжимания' },
+    { id: 4, znachenie: 'Разведение в блоке' }
+  ]);
 
   return (
-    <View> 
-      <Header/>
-      <Text>1. Штанга</Text>
-      <Text>2. Тренажер Смитта</Text>
-      <Text>3. Гантели</Text>
-      <Text>4. Тренажер смита верх</Text>
-      <Button title='hjhhbhjb'></Button>
-      <Button title='jkkjninlg'></Button>
-      <Button title='lqaawzzdx'></Button>
-      <Footer/>
+    <View style={{ flex: 1 }}>
+      <Header />
+      <View style={styles.main}>
+        <FlatList data={Data_db} renderItem={({ item }) => (
+          <Text>{item.znachenie}</Text>
+        )} />
+      </View>
+      <Footer />
     </View>
-  )
+  ); 
 }
+
+const styles = StyleSheet.create({
+  main: {
+    flex: 15,
+    backgroundColor: "white",
+  },
+  mainText: {
+    fontSize: 20,
+    textAlign: 'center',
+  }
+})
 
 export default Main;

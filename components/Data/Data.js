@@ -18,4 +18,4 @@ const [ Data_db, setData_db ] = useState([
     { id: 4, znachenie: 1}
 ]);*/
 }
-export default Data
+export default Data;

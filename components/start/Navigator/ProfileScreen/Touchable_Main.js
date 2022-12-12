@@ -2,17 +2,17 @@ import React from 'react';
 import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
 
 
-const Touchable_Main = (props) => {
-  const { navigation, data_id, data_zn } = props;
-  console.log(data_zn)
+const Touchable_Main = ( props ) => {
+  //const { navigation, data_id, data_zn } = props;
+  console.log(props.navigation.navigate)
   return (
     <View style={styles.mainblock}>
-      <Text style={styles.zagolovok}>День{data_id}! </Text>
-      <TouchableHighlight onPress={() => navigation.navigate("Main")} style={styles.button} underlayColor="blue">
-        <View>{data_zn.map((item) => {
+      <Text style={styles.zagolovok}>День! </Text>
+      <TouchableHighlight onPress={() => props.navigation.navigate("Main")} style={styles.button} underlayColor="blue">
+        <View>{props.data_db_zn.map(({znachenie}, key) => {
           return (
-            <View>
-              <Text>{item.znachenie}</Text>
+            <View key={key}>
+              <Text>{znachenie}</Text>
             </View>
           )
         })}

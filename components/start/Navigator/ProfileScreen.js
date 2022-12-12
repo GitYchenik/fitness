@@ -17,9 +17,14 @@ const ProfileScreen = ({ navigation }) => {
     { ids: 3, znachenie: 'Тренажер верх', key: '3' },
     { ids: 4, znachenie: 'Разведение в блоке', key: '4' }],
 
+    [{ ids: 1, znachenie: 'ytГантели', key: '1' },
+    { ids: 2, znachenie: 'Тренажер валики', key: '2' },
+    { ids: 3, znachenie: 'Тренажер верх', key: '3' },
+    { ids: 4, znachenie: 'Разведение в блоке', key: '4' }],
+
   ]
   );
-console.log(Data_db[1][1])
+
   return (
 
     <View style={{ flex: 1 }}>
@@ -28,8 +33,9 @@ console.log(Data_db[1][1])
         <ScrollView>
           <Text style={styles.mainText}>Дневник занятий</Text>
 
-          <Touchable_Main navigation={navigation} data_id={Data_db[0][0].ids} data_zn={Data_db[0]}/>
-          <Touchable_Main navigation={navigation} data_id={Data_db[0][1].ids} data_zn={Data_db[1]}/>
+          <Touchable_Main navigation={navigation} data_db_zn={Data_db[0]} Data_db={Data_db}/>
+          {/* <Touchable_Main navigation={navigation} data_db_zn={Data_db[1]} Data_db={Data_db}/>
+          <Touchable_Main navigation={navigation} data_db_zn={Data_db[2]} Data_db={Data_db}/> */}
 
         </ScrollView>
       </View>

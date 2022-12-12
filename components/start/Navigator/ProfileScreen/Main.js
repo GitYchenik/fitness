@@ -4,20 +4,13 @@ import { StyleSheet, View, Text, FlatList } from 'react-native';
 import Footer from './Footer.js';
 
 
-
-const Main = ({ navigation }) => {
-    const [Data_db, setData_db] = useState([
-    { id: 1, znachenie: 'Тренажер 4' },
-    { id: 2, znachenie: 'Блок назад' },
-    { id: 3, znachenie: 'Отжимания' },
-    { id: 4, znachenie: 'Разведение в блоке' }
-  ]);
-
+const Main = ( props ) => {
+console.log(props)
   return (
     <View style={{ flex: 1 }}>
       <Header />
       <View style={styles.main}>
-        <Text>апвапвпвп</Text>
+        <Text>oooogo</Text>
       </View>
       <Footer />
     </View>

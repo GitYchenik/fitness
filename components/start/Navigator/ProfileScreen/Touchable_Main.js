@@ -3,12 +3,12 @@ import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
 
 
 const Touchable_Main = ( props ) => {
-  //const { navigation, data_id, data_zn } = props;
-  console.log(props.navigation.navigate)
+//console.log(props.data_db_zn[0].day) //- расскоментировать для проверки что передается на страницу
+
   return (
     <View style={styles.mainblock}>
-      <Text style={styles.zagolovok}>День! </Text>
-      <TouchableHighlight onPress={() => props.navigation.navigate("Main")} style={styles.button} underlayColor="blue">
+      <Text style={styles.zagolovok}> { props.data_db_zn[0].day } </Text>
+      <TouchableHighlight onPress={() => props.navigation.navigate("Main", props.data_db_zn)} style={styles.button} underlayColor="blue">
         <View>{props.data_db_zn.map(({znachenie}, key) => {
           return (
             <View key={key}>

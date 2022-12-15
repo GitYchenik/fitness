@@ -5,12 +5,13 @@ import Footer from '../Footer.js';
 
 
 const Exercises = (props) => {
-  console.log(props)
+  console.log(props.route.params.znachenie)
   return (
     <View style={{ flex: 1 }}>
       <Header />
       <View style={styles.main}>
         <Text>Exercises hello </Text>
+        <Text>{props.route.params.znachenie}</Text>
       </View>
       <Footer />
     </View>

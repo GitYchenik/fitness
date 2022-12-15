@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, ScrollView, TouchableHighlight, Touchable } from 'react-native';
-import Header from './ProfileScreen/Header.js'
-import Footer from './ProfileScreen/Footer.js'
-import Touchable_Main from './ProfileScreen/Touchable_Main.js'
+import Header from './MainScreen/Header.js'
+import Footer from './MainScreen/Footer.js'
+import Touchable_Main from './MainScreen/Touchable_Main.js'
 
 
-const ProfileScreen = ({ navigation }) => {
+const MainScreen = ({ navigation }) => {
   const [Data_db, setData_db] = useState([
     [{ ids: 1, znachenie: 'Штанга', key: '1', day: 'День 1 Руки' },
     { ids: 2, znachenie: 'Тренажер Смитта', key: '2' },
@@ -55,4 +55,4 @@ const styles = StyleSheet.create({
 })
 
 
-export default ProfileScreen;
+export default MainScreen;

@@ -1,6 +1,6 @@
 import React from 'react';
-import Header from '../ProfileScreen/Header.js'
-import { StyleSheet, View, Text, FlatList, TouchableHighlight } from 'react-native';
+import Header from '../MainScreen/Header.js'
+import { StyleSheet, View, Text, FlatList, TouchableHighlight, Button } from 'react-native';
 import Footer from './Footer.js';
 
 
@@ -22,6 +22,8 @@ const Main = (props) => {
               )}
             />
           </TouchableHighlight>
+          <View style={styles.button}><Button onPress={() => props.navigation.goBack()} title='Title from franch' /></View>      
+          
         </View>
       </View>
       <Footer />
@@ -40,15 +42,21 @@ const styles = StyleSheet.create({
   },
   item: {
     backgroundColor: '#f9c2ff',
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16,
+    padding: 10,
+    marginVertical: 5,
+    width: '95%',
+    alignSelf: 'center'
   },
   zagolovok: {
     textAlign: 'center',
     fontWeight: 'bold',
     marginTop: 15
   },
+  button: {
+    marginVertical: 10,
+    width: '95%',
+    alignSelf: 'center'
+  }
 })
 
 export default Main;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
 
-
 const Touchable_Main = ( props ) => {
 //console.log(props.data_db_zn[0].day) //- расскоментировать для проверки что передается на страницу
 

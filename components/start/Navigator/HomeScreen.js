@@ -5,10 +5,10 @@ export default function HomeScreen({ navigation }) {
     const LoadScene = () => {
         setTimeout(
             () => {
-                navigation.navigate('ProfileScreen')
-            }, 5000);
+                navigation.navigate('MainScreen')
+            }, 1000);
     }
-    //navigation.navigate('ProfileScreen')
+    //navigation.navigate('MainScreen')
 
     return (
         <>

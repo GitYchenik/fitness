@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { StyleSheet, View, Text, VirtualizedList } from 'react-native';
-import Main from '../start/Navigator/ProfileScreen/Main';
 
 
 export default function Data() {

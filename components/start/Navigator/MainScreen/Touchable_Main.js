@@ -1,8 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect  } from 'react';
 import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
 const Touchable_Main = ( props ) => {
-//console.log(props.data_db_zn[0].day) //- расскоментировать для проверки что передается на страницу
+//console.log(props) //- расскоментировать для проверки что передается на страницу
+
+useEffect(() => {
+  getData()
+}, []);
+
+const getData = async () => {
+  try {
+    const value = await AsyncStorage.getItem('UserName')
+    console.log(value)
+    if (value !== null) {
+      console.log('Не пустое нах')
+    }
+  } catch (e) {
+    console.log('что то не так нах')
+  }
+}
 
   return (
     <View style={styles.mainblock}>

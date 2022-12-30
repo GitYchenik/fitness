@@ -2,10 +2,10 @@ import React from 'react';
 import Header from '../MainScreen/Header.js'
 import { StyleSheet, View, Text, FlatList, TouchableHighlight, Button } from 'react-native';
 import Footer from './Footer.js';
-
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Main = (props) => {
-  //console.log(props)
+  console.log(props)
   return (
     <View style={{ flex: 1 }}>
       <Header />
@@ -18,13 +18,13 @@ const Main = (props) => {
             renderItem={({ item }) => (
               <TouchableHighlight onPress={() => props.navigation.navigate("Exercises", item)}>
                 <View style={styles.item}>
-                  <Text> {item.znachenie} </Text>{console.log(item)}
+                  <Text> {item.znachenie} </Text>
                 </View>
               </TouchableHighlight>
             )}
           />
         </View>
-{console.log(props.route.params)}
+
         <View style={styles.button}><Button onPress={() => props.navigation.goBack()} title='Title from franch' /></View>
 
       </View>

@@ -5,12 +5,15 @@ import Footer from './Footer.js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Main = (props) => {
-  console.log(props)
+  //console.log(props)
   return (
     <View style={{ flex: 1 }}>
       <Header />
       <View style={styles.main}>
-        <Text style={styles.zagolovok}>{props.route.params[0].day}</Text>
+        <View style={styles.button_edit}>
+          <Text style={styles.zagolovok}>{props.route.params[0].day}</Text>
+          <Button title='Кнопка нах' />
+        </View>
 
         <View>
           <FlatList
@@ -58,6 +61,13 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     width: '95%',
     alignSelf: 'center'
+  },
+  button_edit: {
+    flexDirection: 'row',
+    justifyContent: 'flex-start',
+    alignSelf: 'center',
+    marginHorizontal: '10',
+    
   }
 })
 

@@ -1,6 +1,7 @@
 import React, { useState, useEffect  } from 'react';
 import { View, Text, TouchableHighlight, StyleSheet } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+
 const Touchable_Main = ( props ) => {
 //console.log(props) //- расскоментировать для проверки что передается на страницу
 

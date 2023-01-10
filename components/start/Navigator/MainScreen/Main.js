@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../MainScreen/Header.js'
-import { StyleSheet, View, Text, FlatList, TouchableHighlight, Button } from 'react-native';
+import { StyleSheet, View, Text, FlatList, TouchableHighlight, Button, TextInput } from 'react-native';
 import Footer from './Footer.js';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Main = (props) => {
-  //console.log(props)
+  console.log(props)
+  //<TextInput defaultValue={props.route.params[0].day} style={styles.zagolovok}  - для работы инпута
+  
   return (
     <View style={{ flex: 1 }}>
       <Header />
       <View style={styles.main}>
-        <View style={styles.button_edit}>
-          <Text style={styles.zagolovok}>{props.route.params[0].day}</Text>
-          <Button title='Кнопка нах' />
+        <View style={styles.block_zagolovok}>
+          <TextInput defaultValue={props.route.params[0].day} style={styles.zagolovok} />
+          <Button style={{ width: '50' }} title='х' onPress={console.log('тыц')} />
         </View>
 
         <View>
@@ -28,7 +30,7 @@ const Main = (props) => {
           />
         </View>
 
-        <View style={styles.button}><Button onPress={() => props.navigation.goBack()} title='Title from franch' /></View>
+        <View style={styles.button_nazad}><Button onPress={() => props.navigation.goBack()} title='Вернутся назад' /></View>
 
       </View>
       <Footer />
@@ -41,10 +43,6 @@ const styles = StyleSheet.create({
     flex: 15,
     backgroundColor: "white",
   },
-  mainText: {
-    fontSize: 20,
-    textAlign: 'center',
-  },
   item: {
     backgroundColor: '#f9c2ff',
     padding: 10,
@@ -55,19 +53,16 @@ const styles = StyleSheet.create({
   zagolovok: {
     textAlign: 'center',
     fontWeight: 'bold',
-    marginTop: 15
   },
-  button: {
+  button_nazad: {
     marginVertical: 10,
     width: '95%',
     alignSelf: 'center'
   },
-  button_edit: {
+  block_zagolovok: {
     flexDirection: 'row',
     justifyContent: 'flex-start',
     alignSelf: 'center',
-    marginHorizontal: '10',
-    
   }
 })
 

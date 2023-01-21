@@ -10,7 +10,8 @@ console.log(props)
       <Header />
       <View style={styles.main}>
         <Text>Exercises helfdgfglo </Text>
-        {/* <View style={styles.button}><Button onPress={() => navigation.goBack()} title='Вернутся назад' /></View> */}
+        {<View style={styles.button}>
+          <Button onPress={() => navigation.goBack()} title='Вернутся назад' /></View>}
       </View>
       <Footer />
     </View>

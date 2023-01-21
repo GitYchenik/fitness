@@ -4,7 +4,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Touchable_Main = ( props ) => {
 //console.log(props) //- расскоментировать для проверки что передается на страницу
-
+/*
 useEffect(() => {
   getData()
 }, []);
@@ -20,7 +20,7 @@ const getData = async () => {
     console.log('что то не так нах')
   }
 }
-
+*/
   return (
     <View style={styles.mainblock}>
       <Text style={styles.zagolovok}> { props.data_db_zn[0].day } </Text>

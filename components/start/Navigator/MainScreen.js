@@ -23,7 +23,7 @@ const MainScreen = ({ navigation }) => {
     { ids: 4, znachenie: 'Разведение в блоке', key: '4' }]
   ]
   );
-  
+/*  
   useEffect(() => {
     storeData()
 }, []); 
@@ -36,7 +36,7 @@ const MainScreen = ({ navigation }) => {
       console.log('Ошибка нах')
     }
   }
-
+*/
   return (
 
     <View style={{ flex: 1 }}>
